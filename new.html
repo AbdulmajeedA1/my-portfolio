@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background-color: #596371;
+    }
+
+    header {
+      background-color: #f0f0f0;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header div a {
+      text-decoration: none;
+    }
+    header a ,li :hover {
+      text-decoration:underline;
+      color: #388462;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    header nav li {
+      margin-right: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #383737;
+    }
+  .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+   
+    
+    .hero {
+      background-image: url('./images/i\ \(2\).webp');
+      background-size: 40px 40px;
+      background-size: cover;
+      /* background-image: url('./background.jpg'); */
+      min-height: 600px;
+      align-content: center;
+      align-items: center;
+      color: white;
+      padding-left: 30%;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+    }
+
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    #no1 {
+      background-color: #8ba1bf;
+    }
+
+    #no1 image {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    #no2 h4 {
+      margin-top: 30px;
+    }
+
+    #no2, h1 {
+      margin-top: 10%;
+    }
+
+    #no2, p {
+      margin-top: 5%;
+      text-align: justify;
+    }
+
+    #noa h4 {
+      padding-top: 3%;
+      margin-left: 10%;
+    }
+    #noa{
+
+      background-color: #8ba1bf;
+    }
+
+    #noa h1 {
+      padding-bottom: 10px;
+      margin: -9px;
+      text-align: center;
+    }
+    .card {
+      height: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card p {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      background-color: #e0e9f2;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .form-container, .contact-details {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .checkbox-container input {
+      margin-right: 10px;
+    }
+    .checkbox-container label {
+      margin: 0;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .contact-details {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .contact-details h2 {
+      margin-top: 0;
+    }
+    .contact-details p {
+      margin: 5px 0;
+    }
+
+    #footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+    }
+
+    #footer ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    #footer ul li {
+      margin: 0 15px;
+    }
+
+    #footer a {
+      text-decoration: none;
+      color: white;
+    }
+
+    #footer p {
+      text-align: center;
+      margin: 10px 0 0;
+    }
+
+    .footer-bottom {
+      text-align: center;
+    }
+
+    .bold-hr {
+      border: none;
+      border-top: 1px solid #555;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body class="bg-gray">
+  <header>
+    <div>
+      <a href="#" id="p1"><h1>My Portfolio</h1></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#p1">Home</a></li>
+        <li><a href="#no2">About</a></li>
+        <li><a href="#noa">Services</a></li>
+        <li><a href="#touch">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="" style="margin: 0px 0px 10px 0px;">
+      <div class="container-fluid hero m5">
+        <h1>My Portfolio</h1>
+        <p>Showcasing my work and projects.</p>
+        <a href="#noa" class="button">VIEW SERVICES</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-fluid" style="margin: 10px 0px 10px 0px;" id="no1">
+    <div class="row">
+      <div class="col-8" id="no2">
+        <h4>Who I Am</h4>
+        <h1>Crafting unique experiences</h1>
+        <p>Welcome to My Portfolio, your gateway to exploring my creative journey based in Karachi. Here, I showcase my work and projects that highlight my skills and passion. Each piece is a testament to my dedication and expertise, designed to inspire and engage. Dive into my portfolio and discover the artistry and innovation that I bring to every project.</p>
+        <a href="#touch" class="get-in-touch">Get in touch</a>
+      </div>
+      <div class="image-content col-4">
+        <img src="./images/r1.jpg" height="100%" width="450px">
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid  " id="noa">
+    <h4>What I Offer</h4>
+    <h1>Tailored solutions for you</h1>
+    <div class="row">
+      <div class="col-6 mb-5">
+        <div class="card">
+          <div class="card-content">
+            <img src="./web.jpg" class="card-img-top" alt="Card image">
+            <div class="">
+              <h3 class="card-title">Web development</h3>
+              <p class="card-text">Building responsive and user-friendly websites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mb-5">
+        <div class="card">
+          <div class="card-content">
+            <img src="./i (1).webp" class="card-img-top" alt="Card image" height="45%">
+            <div class="card-body">
+              <h3 class="card-title">project</h3>
+              
+              <h3></h3>
+              <p class="card-text">""My ability to create intuitive and useful web applications is demonstrated by the successful development and launch of Theater.com, an interactive platform for scheduling and evaluating theater performances, as well as the Calculator app."</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="touch">
+    <div class="form-container">
+      <h1>Collaborate</h1>
+      <form>
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email address *</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone number *</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+        <div class="checkbox-container">
+          
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <ul>
+      <li><a href="#touch">Contact</a></li>
+      <li><a href="#noa">Services</a></li>
+    </ul>
+    <hr class="bold-hr">
+    <div class="footer-bottom">
+      <p>&copy; designed by Abdul Majeed</p>
+    </div>
+  </footer>
+</body>
+</html>
